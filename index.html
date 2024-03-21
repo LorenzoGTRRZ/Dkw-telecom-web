@@ -15,23 +15,77 @@
         </ul>
     </section>
     <section class="shows">
-        <div class="shows__tabmenu">
-            <ul class="shows__tabmenu">
-                <li class="shows__tabmenu__list">
-                    <a >Linha de Injetados</a>
+        <nav class="shows__tabmenu">
+            <button data-tab-button="injetadosSection" class="shows__tabmenu__list shows__tabmenu__list--is-active">
+                Linha de Injetados
+            </button>
+            <button data-tab-button="ferragemSection" class="shows__tabmenu__list">
+                Linha de Ferragem
+            </button>
+            <button data-tab-button="preformadosSection" class="shows__tabmenu__list">
+                Linha de Preformados
+            </button>
+        </nav>
+        <div class="shows__aba shows__aba--is-active" data-tab-id="injetadosSection">
+            <ul class="shows__aba--is-active">
+                <li>
+                    <img src="./dist/images/0-removebg-preview.png" alt="">
+                    <h3>SUPA - Suporte de Ancoragem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
+                    </p>
+                    <button class="button">Entre em contato</button>
                 </li>
-                <li class="shows__tabmenu__list">
-                    <a>Linha de Ferragem</a>
+                <li>
+                    <img src="./dist/images/0-removebg-preview.png" alt="">
+                    <h3>SUPA - Suporte de Ancoragem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
+                    </p>
+                    <button class="button">Entre em contato</button>
                 </li>
-                <li class="shows__tabmenu__list">
-                    <a>Linha de Preformados</a>
+                <li>
+                    <img src="./dist/images/0-removebg-preview.png" alt="">
+                    <h3>SUPA - Suporte de Ancoragem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
+                    </p>
+                    <button class="button">Entre em contato</button>
                 </li>
             </ul>
         </div>
-        <div class="shows__injetados">
-            <ul class="shows__injetados">
+        <div class="shows__aba" data-tab-id="ferragemSection">
+            <ul class="shows__aba--is-active">
+                <li>
+                    <img src="./dist/images/Logo 1.png" alt="">
+                    <h3>SUPA - Suporte de Ancoragem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
+                    </p>
+                    <button class="button">Entre em contato</button>
+                </li>
                 <li>
                     <img src="./dist/images/0-removebg-preview.png" alt="">
+                    <h3>SUPA - Suporte de Ancoragem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
+                    </p>
+                    <button class="button">Entre em contato</button>
+                </li>
+                <li>
+                    <img src="./dist/images/0-removebg-preview.png" alt="">
+                    <h3>SUPA - Suporte de Ancoragem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
+                    </p>
+                    <button class="button">Entre em contato</button>
+                </li>
+            </ul>
+        </div>
+        <div class="shows__aba" data-tab-id="preformadosSection">
+            <ul class="shows__aba--is-active">
+                <li>
+                    <img src="./dist/images/banner 2.png" alt="">
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
@@ -57,5 +111,6 @@
             </ul>
         </div>
     </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>
