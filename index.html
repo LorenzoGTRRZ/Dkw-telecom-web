@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DKW Telecom</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <section class="hero">
@@ -14,17 +15,17 @@
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
                 <div class="hero__slider__slides__slide first">
-                    <img src="./dist/images/Banner 1.png" alt="IMAGEM 1">
+                    <img src="./dist/images/Inserir um título (7).png" alt="IMAGEM 1">
                 </div>
                 <div class="hero__slider__slides__slide ">
-                    <img src="./dist/images/banner 2.png" alt="IMAGEM 2">
+                    <img src="./dist/images/Inserir um título (8).png" alt="IMAGEM 2">
                 </div>
                 <div class="hero__slider__slides__slide ">
                     <img src="./dist/images/Banner 1.png" alt="IMAGEM 1">
                 </div>
 
                 <div class="hero__slider__slides__navigation-auto--transition ">
-                    <div class="hero__slider__slides__navigation-auto  auto-btn1"></div>
+                    <div class="hero__slider__slides__navigation-auto auto-btn1"></div>
                     <div class="hero__slider__slides__navigation-auto auto-btn2"></div>
                     <div class="hero__slider__slides__navigation-auto auto-btn3"></div>
                 </div>
@@ -40,6 +41,9 @@
         </div>
     </section>
     <section class="shows">
+        <div data-aos="fade-right" class="shows__tittle-section">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        </div>
         <nav class="shows__tabmenu">
             <button data-tab-button="injetadosSection" class="shows__tabmenu__list shows__tabmenu__list--is-active">
                 Linha de Injetados
@@ -51,26 +55,32 @@
                 Linha de Preformados
             </button>
         </nav>
-        <div class="shows__aba shows__aba--is-active" data-tab-id="injetadosSection">
+        <div data-aos="fade-right" class="shows__aba shows__aba--is-active" data-tab-id="injetadosSection">
             <ul class="shows__aba--is-active">
-                <li>
-                    <img src="./dist/images/0-removebg-preview.png" alt="">
+                    <li class="shows__aba__item">
+                        <a href="">
+                            <img src="./dist/images/0-removebg-preview.png" alt="">
+                        </a>
+                        <h3>SUPA - Suporte de Ancoragem</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
+                        </p>
+                        <button class="button">Entre em contato</button>
+                    </li>
+                <li class="shows__aba__item shows__aba__item--product">
+                    <a href="">
+                        <img src="./dist/images/0-removebg-preview.png" alt="">
+                    </a>
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
                     </p>
                     <button class="button">Entre em contato</button>
                 </li>
-                <li>
-                    <img src="./dist/images/0-removebg-preview.png" alt="">
-                    <h3>SUPA - Suporte de Ancoragem</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
-                    </p>
-                    <button class="button">Entre em contato</button>
-                </li>
-                <li>
-                    <img src="./dist/images/0-removebg-preview.png" alt="">
+                <li class="shows__aba__item shows__aba__item--product">
+                    <a href="">
+                        <img src="./dist/images/0-removebg-preview.png" alt="">
+                    </a>
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolorem cupiditate repellendus alias, modi hic similique, ut iusto voluptatibus quidem fuga velit. Facere quis corrupti natus corporis, omnis blanditiis odio.
@@ -81,7 +91,7 @@
         </div>
         <div class="shows__aba" data-tab-id="ferragemSection">
             <ul class="shows__aba--is-active">
-                <li>
+                <li class="shows__aba__item">
                     <img src="./dist/images/Logo 1.png" alt="">
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
@@ -89,7 +99,7 @@
                     </p>
                     <button class="button">Entre em contato</button>
                 </li>
-                <li>
+                <li class="shows__aba__item shows__aba__item--product">
                     <img src="./dist/images/0-removebg-preview.png" alt="">
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
@@ -97,7 +107,7 @@
                     </p>
                     <button class="button">Entre em contato</button>
                 </li>
-                <li>
+                <li class="shows__aba__item shows__aba__item--product">
                     <img src="./dist/images/0-removebg-preview.png" alt="">
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
@@ -109,7 +119,7 @@
         </div>
         <div class="shows__aba" data-tab-id="preformadosSection">
             <ul class="shows__aba--is-active">
-                <li>
+                <li class="shows__aba__item">
                     <img src="./dist/images/banner 2.png" alt="">
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
@@ -117,7 +127,7 @@
                     </p>
                     <button class="button">Entre em contato</button>
                 </li>
-                <li>
+                <li class="shows__aba__item shows__aba__item--product">
                     <img src="./dist/images/0-removebg-preview.png" alt="">
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
@@ -125,7 +135,7 @@
                     </p>
                     <button class="button">Entre em contato</button>
                 </li>
-                <li>
+                <li class="shows__aba__item shows__aba__item--product">
                     <img src="./dist/images/0-removebg-preview.png" alt="">
                     <h3>SUPA - Suporte de Ancoragem</h3>
                     <p>
@@ -136,6 +146,7 @@
             </ul>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./src/main.js"></script>
 </body>
 </html>

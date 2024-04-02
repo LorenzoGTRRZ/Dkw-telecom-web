@@ -21,6 +21,7 @@
     "ansi-regex": "^5.0.1",
     "ansi-wrap": "^0.1.0",
     "anymatch": "^2.0.0",
+    "aos": "^2.3.4",
     "append-buffer": "^1.0.2",
     "archy": "^1.0.0",
     "arr-diff": "^4.0.0",
