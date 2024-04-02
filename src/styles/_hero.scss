@@ -1,0 +1,99 @@
+.hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        &__slider {
+            margin: 0 auto;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+
+            &__slides {
+                width: 400%;
+                height: 400px;
+                display: flex;
+
+                input {
+                    display: none;
+                };
+
+                &__slide {
+                    width: 25%;
+                    position: relative;
+
+                    img {
+                        width: 800px;
+                    }
+                }
+
+                #radio1:checked ~ .first {
+                    margin-left: 0;
+                }
+
+                #radio2:checked ~ .first {
+                    margin-left: -25%;
+                }
+
+                #radio3:checked ~ .first {
+                    margin-left: -50%;
+                }
+
+                #radio1:checked ~ .navigation-auto .auto-btn1 {
+                    background-color: #fff;
+                }
+
+                &__navigation-auto {
+                    position: absolute;
+                    width: 800px;
+                    margin-top: 360px;
+                    display: flex;
+                    justify-content: center;
+
+                    &__auto-btn1 {
+                        #radio:checked {
+                            background-color: #fff;
+                        }
+                    }
+
+                    &--transition {
+                        border: 2px solid #20a6ff;
+                        padding: 5px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
+                }
+
+                &__navigation-auto div:not(:last-child) {
+                    margin-right: 400px;
+                }
+            }
+
+            &__manual-navigation {
+                position: absolute;
+                width: 800px;
+                margin-top: -40px;
+                display: flex;
+                justify-content: center;
+
+                &__manual-btn {
+                    border: 2px solid #fff;
+                    padding: 5px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+
+                &__manual-btn:not(:last-child) {
+                    margin-right: 40px;
+                }
+
+                &__manual-btn:hover {
+                    background-color: #fff;
+                }
+            }
+        }
+    }

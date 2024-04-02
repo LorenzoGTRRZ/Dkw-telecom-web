@@ -8,11 +8,36 @@
 </head>
 <body>
     <section class="hero">
-        <ul>
-            <li>
-                <button class="button">Entre em contato</button>
-            </li>
-        </ul>
+        <div class="hero__slider">
+            <div class="hero__slider__slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="hero__slider__slides__slide first">
+                    <img src="./dist/images/Banner 1.png" alt="IMAGEM 1">
+                </div>
+                <div class="hero__slider__slides__slide ">
+                    <img src="./dist/images/banner 2.png" alt="IMAGEM 2">
+                </div>
+                <div class="hero__slider__slides__slide ">
+                    <img src="./dist/images/Banner 1.png" alt="IMAGEM 1">
+                </div>
+
+                <div class="hero__slider__slides__navigation-auto--transition ">
+                    <div class="hero__slider__slides__navigation-auto  auto-btn1"></div>
+                    <div class="hero__slider__slides__navigation-auto auto-btn2"></div>
+                    <div class="hero__slider__slides__navigation-auto auto-btn3"></div>
+                </div>
+            </div>
+
+            <div class="hero__slider__manual-navigation">
+                <label for="radio1" class="hero__slider__manual-navigation__manual-btn"></label>
+                <label for="radio2" class="hero__slider__manual-navigation__manual-btn"></label>
+                <label for="radio3" class="hero__slider__manual-navigation__manual-btn"></label>
+            </div>
+
+
+        </div>
     </section>
     <section class="shows">
         <nav class="shows__tabmenu">
