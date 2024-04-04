@@ -1,2 +1,48 @@
 @use 'variables';
 
+.footer {
+    border-top: 1px solid variables.$corDaBorda ;
+    display: flex;
+    max-width: 1260px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    &__logo {
+        justify-content: center;
+        margin-top: 25px;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    &__container {
+        text-align: start;
+        margin-top: 30px;
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: .87rem;
+        }
+    }
+
+    &__links {
+
+
+        &__item {
+            margin-bottom: 8px;
+
+            a {
+                font-size: .87rem;
+                line-height: 1.5;
+                text-decoration: none;
+                color: variables.$corDoTextoCinza;
+
+                i {
+                    margin-right: 7px;
+                    color: variables.$corDoBotao;
+                }
+            }
+        }
+    }
+}
