@@ -39,15 +39,16 @@
 
     &__aba {
         display: none;
+        grid-template-columns: repeat(4, minmax(324px, 1fr));
+        gap: 20px;
+        justify-content: center; 
+        margin: 0 auto;
+        max-width: 1260px; 
 
         &__item {
             border:  1px solid #000;
-            width: 12%;
-            position: relative;
-
-            &--product {
-                margin-left: 100px;
-            }
+            margin-left: 100px;
+            margin-bottom: 50px;
 
             h3 {
                 font-size: 15px;
@@ -64,11 +65,10 @@
         }
 
         &--is-active {
-            display: flex;
+            display: grid;
             text-align: center;
             align-items: center;
             justify-content: center;
-            opacity: 1;
         }
 
         img {
