@@ -10,7 +10,7 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        max-width: 1260px;
+        max-width: 1390px;
     }
 
     &__logo {
@@ -30,7 +30,11 @@
         &__link {
             margin-right: 10px;
             font-weight: bold;
-            color: variables.$corDoBotao;
+
+            a {
+                color: variables.$corDoBotao;
+                text-decoration: none;
+            }
         }
     }
 }
