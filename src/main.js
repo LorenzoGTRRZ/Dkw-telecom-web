@@ -40,6 +40,53 @@ button.addEventListener('mousemove', (e) => {
     button.style.setProperty('--mouse-y', y + "px");
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    let nextDom = document.getElementById('next');
+    let prevDom = document.getElementById('prev');
+
+    let carouselDom = document.querySelector('.carousel');
+    let sliderDom = carouselDom.querySelector('.carousel__list');
+    let timeRunning = 3000;
+    let timeAutoNext = 7000;
+
+
+    let runTimeOut;
+    let runNextAuto = setTimeout(() => {
+        nextDom.click();
+    }, timeAutoNext);
+
+    nextDom.onclick = function() {
+        showSlider('next');
+    };
+
+    prevDom.onclick = function() {
+        showSlider('prev');
+    };
+
+    function showSlider(type) {
+        let sliderItemsDom = sliderDom.querySelectorAll('.carousel__list__item');
+
+        if (type === 'next') {
+            sliderDom.appendChild(sliderItemsDom[0]);;
+            carouselDom.classList.add('next');
+        } else {
+            sliderDom.prepend(sliderItemsDom[sliderItemsDom.length - 1]);
+            carouselDom.classList.add('prev');
+        }
+        
+        clearTimeout(runTimeOut);
+        runTimeOut = setTimeout(() => {
+            carouselDom.classList.remove('next');
+            carouselDom.classList.remove('prev');
+        }, timeRunning);
+
+        clearTimeout(runNextAuto);
+        runNextAuto = setTimeout(() => {
+            nextDom.click();
+        }, timeAutoNext);
+    }
+});
+
 
 
 
