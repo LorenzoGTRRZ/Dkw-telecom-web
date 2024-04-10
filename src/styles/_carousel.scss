@@ -2,14 +2,16 @@
 
 .hero{
     margin: 0;
-    background-color: #000;
-    color: #eee;
+    background-color: variables.$corDoPreta;
+    color: variables.$corDoTexto;
     font-size: 12px;
 }
 a{
     text-decoration: none;
 }
-/* carousel */
+
+
+
 .carousel{
     height: 100vh;
     width: 100vw;
@@ -36,8 +38,8 @@ a{
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: #fff;
-    text-shadow: 0 5px 10px #0004;
+    color: variables.$corDoTexto;
+    text-shadow: 0 5px 10px variables.$corTextShadow;
 }
 .carousel .list .item .author{
     font-weight: bold;
@@ -50,7 +52,7 @@ a{
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    color: #f1683a;
+    color: variables.$corDoTopico;
 }
 .carousel .list .item .buttons{
     display: grid;
@@ -61,15 +63,15 @@ a{
 }
 .carousel .list .item .buttons button{
     border: none;
-    background-color: #fff;
+    background-color: variables.$corDoTexto;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
-    border: 1px solid #fff;
-    color: #eee;
+    border: 1px solid variables.$corDoTexto;
+    color: variables.$corCinza;
 }
 /* thumbail */
 .thumbnail{
@@ -94,7 +96,7 @@ a{
     border-radius: 20px;
 }
 .thumbnail .item .content{
-    color: #fff;
+    color: variables.$corDoTexto;
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -122,16 +124,16 @@ a{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #eee4;
+    background-color:  variables.$corArrows;
     border: none;
-    color: #000;
+    color:  variables.$corDoPreta;
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
 }
 .arrows button:hover{
-    background-color: #000;
-    color: #000;
+    background-color:  variables.$corDoPreta;
+    color:  variables.$corDoTexto;
 }
 
 /* animation */
@@ -221,7 +223,7 @@ a{
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #f1683a;
+    background-color:  variables.$corDoTopico;
     left: 0;
     top: 0;
 }

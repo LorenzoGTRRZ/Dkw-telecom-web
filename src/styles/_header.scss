@@ -1,7 +1,7 @@
 @use 'variables';
 
 .header {
-    background-color: #fff;
+    background-color: variables.$corDoTexto;
     position: fixed;
     z-index: 999;
     width: 100%;
