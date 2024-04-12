@@ -1,0 +1,71 @@
+@use 'variables';
+
+.contact {
+    text-align: center;
+    padding-top: 200px;
+    width: 100%;
+    font-size: 30px;
+    padding-bottom: 150px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: block;
+            border-radius: 3px;
+            box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+            line-height: 3.25;
+            background: variables.$corDoBotao;
+            text-decoration: none;
+            color: variables.$corDoTexto;
+            font-size: 16px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            position: relative;
+            transition: background-color .6s ease;
+            overflow: hidden;
+            border: none;
+            margin: 30px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: 50%;
+                left: 50%;
+                top: var(--mouse-y);
+                left: var(--mouse-x);
+                transform-style: flat;
+                transform: translate3d(-50%, -50%, 0);
+                background: rgba(white, .1);
+                border-radius: 100%;
+                transition: width .3s ease, height .3s ease;
+            }
+    
+            &:focus,
+            &:hover {
+                background: darken(variables.$corDoTextoAzul, 7%);
+            }
+    
+            &:active {
+                &:after {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+
+        &__whats {
+            margin-top: 100px;
+
+            a {
+                width: 180px;
+                height: 50px;
+                justify-content: center;
+            }
+        }
+    }
+}
