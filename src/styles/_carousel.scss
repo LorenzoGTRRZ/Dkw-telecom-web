@@ -17,6 +17,10 @@ a{
     width: 100vw;
     overflow: hidden;
     position: relative;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
 }
 .carousel .list .item{
     width: 100%;
@@ -40,16 +44,36 @@ a{
     box-sizing: border-box;
     color: variables.$corDoTexto;
     text-shadow: 0 5px 10px variables.$corTextShadow;
+
+    @media (max-width: 678px) {
+        max-width: 375px;
+        left: 60%;
+        top: 20%;
+    }
+
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 715px;
+        left: 52%;
+    }
 }
 .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 10px;
+
+    @media (max-width: 678px) {
+        font-size: 2em;
+    }
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
     font-size: 5em;
     font-weight: bold;
     line-height: 1.3em;
+
+    @media (max-width: 678px) {
+        font-size: 3em;
+    }
 }
 .carousel .list .item .topic{
     color: variables.$corDoTopico;
@@ -82,12 +106,26 @@ a{
     z-index: 100;
     display: flex;
     gap: 20px;
+
+    @media (max-width: 678px) {
+        left: 72%;
+        bottom: 10px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        left: 45%;
+    }
 }
 .thumbnail .item{
     width: 150px;
     height: 220px;
     flex-shrink: 0;
     position: relative;
+
+    @media (max-width: 678px) {
+        width: 90px;
+        height: 140px;
+    }
 }
 .thumbnail .item img{
     width: 100%;
@@ -291,5 +329,9 @@ a{
     }
     .carousel .list .item .content .title{
         font-size: 30px;
+    }
+
+    .des {
+        display: none;
     }
 }
