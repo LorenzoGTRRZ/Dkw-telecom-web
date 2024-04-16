@@ -8,7 +8,7 @@
     &__tittle-section {
         margin-bottom: 75px;
         text-align: center;
-        font-size: large;
+        font-size: 40px;
         color: variables.$corDoTextoAzul;
     }
 
@@ -20,6 +20,7 @@
 
         @media (max-width: 678px) {
             display: block;
+            text-align: center;
         }
 
         &__list {

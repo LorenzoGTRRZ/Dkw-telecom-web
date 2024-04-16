@@ -8,6 +8,7 @@
 }
 a{
     text-decoration: none;
+    color: variables.$corDoTexto;
 }
 
 
@@ -48,7 +49,7 @@ a{
     @media (max-width: 678px) {
         max-width: 375px;
         left: 60%;
-        top: 20%;
+        top: 10%;
     }
 
 
@@ -80,17 +81,19 @@ a{
 }
 .carousel .list .item .buttons{
     display: grid;
-    grid-template-columns: repeat(2, 130px);
+    grid-template-columns: repeat(2, 134px);
     grid-template-rows: 40px;
     gap: 5px;
     margin-top: 20px;
+
 }
-.carousel .list .item .buttons button{
+.carousel .list .item .buttons button {
     border: none;
     background-color: variables.$corDoTexto;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+    cursor: pointer;
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
@@ -101,7 +104,7 @@ a{
 .thumbnail{
     position: absolute;
     bottom: 50px;
-    left: 50%;
+    left: 60%;
     width: max-content;
     z-index: 100;
     display: flex;
@@ -121,6 +124,8 @@ a{
     height: 220px;
     flex-shrink: 0;
     position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 32px -2px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 678px) {
         width: 90px;
@@ -164,7 +169,7 @@ a{
     border-radius: 50%;
     background-color:  variables.$corArrows;
     border: none;
-    color:  variables.$corDoPreta;
+    color:  variables.$corDoTexto;
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
@@ -334,4 +339,8 @@ a{
     .des {
         display: none;
     }
+}
+
+.preto {
+    color: variables.$corDoPreta;
 }
