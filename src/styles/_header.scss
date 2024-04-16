@@ -63,6 +63,29 @@
             a {
                 color: variables.$corDoBotao;
                 text-decoration: none;
+                position: relative;
+                letter-spacing: 0.5px;
+                font-size: 16px;
+                padding: 0 10px;
+            }
+
+            a:after {
+                content: "";
+                position: absolute;
+                background-color: variables.$corDoBotao2;
+                height: 3px;
+                width: 0%;
+                left: 0;
+                bottom: -10px;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                color: variables.$corDoBotao2;
+            }
+
+            a:hover:after {
+                width: 100%;
             }
         }
     }
