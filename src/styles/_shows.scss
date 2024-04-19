@@ -84,9 +84,11 @@
 
             h3 {
                 font-size: 15px;
-                text-align: center;
+                text-align: start;
+                margin-left: 30px;
                 padding-bottom: 15px;
                 color: variables.$corDoTextoAzul;
+                width: 220px;
             }
 
             p {
