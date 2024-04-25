@@ -75,13 +75,21 @@
 
             &__details {
                 margin-bottom: 20px;
-                text-align: justify;
+                text-align: center;
+                margin-left: 140px;
+                width: 500px;
+
+                @media (max-width: 678px) {
+                    width: 300px;
+                    margin-left: 0px;
+                }
 
                 h2 {
                     font-size: 25px;
                     font-weight: 600;
                     line-height: 35px;
                     margin-bottom: 15px;
+                    margin-top: 60px;
                     text-transform: capitalize;
                     color: #011627;
                 }
@@ -119,6 +127,11 @@
                     &__select-color {
                         display: flex;
                         align-items: center;
+                        margin-left: 260px;
+
+                        @media (max-width: 678px) {
+                            margin-left: 20px;
+                        }
 
                         h3 {
                             width: 170px;
@@ -165,6 +178,14 @@
 
                         &__color-4 {
                             background: blue;
+                        }
+
+                        &__color-5 {
+                            background: black;
+                        }
+
+                        &__color-6 {
+                            background: orangered;
                         }
                     }
                 }
