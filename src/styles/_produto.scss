@@ -72,12 +72,11 @@
             background: #fff;
             box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
             padding: 40px 30px 40px 40px;
+            justify-content: center;
 
             &__details {
                 margin-bottom: 20px;
                 text-align: center;
-                margin-left: 140px;
-                width: 500px;
 
                 @media (max-width: 678px) {
                     width: 300px;
@@ -116,6 +115,13 @@
                     font-weight: 500;
                     line-height: 25px;
                     color: #011627;
+                    margin-left: 100px;
+                    margin-right: 100px;
+
+                    @media (max-width: 678px) {
+                        margin-left: 0px;
+                        margin-right: 0px;
+                    }
                 }
             }
 
@@ -123,11 +129,12 @@
                 margin-bottom: 20px;
 
                 &__form {
+                    max-width: 1000px;
 
                     &__select-color {
                         display: flex;
-                        align-items: center;
-                        margin-left: 260px;
+                        justify-content: center;
+
 
                         @media (max-width: 678px) {
                             margin-left: 20px;
