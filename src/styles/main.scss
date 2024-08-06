@@ -5,6 +5,7 @@
 @use 'header';
 @use 'contact';
 @use 'produto';
+@use 'view';
 
 @font-face {
     font-family: 'Bungee';
@@ -19,3 +20,25 @@
     list-style: none;
     text-decoration: none;
 }
+
+.button {
+    position: absolute;
+    margin-top: 10px;
+    padding: 10px 50px 10px;
+    letter-spacing: 3px;
+    border: 1px solid variables.$corDoTexto;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.animation {
+        transform: translateY(50px);
+        filter: blur(20px);
+        opacity: 0;
+        animation: showContent .5s 1s linear 1 forwards;
+        animation-delay: 1.8s!important;
+}
+
+
+
+

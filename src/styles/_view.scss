@@ -1,3 +1,83 @@
+@use 'variables';
+
 .view {
     
+    &__title { 
+        padding-top: 80px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+        h1 {
+            font-size: 44px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 630px;
+            margin: 0 auto;
+            margin-bottom: 32px;
+            color: variables.$corDoTextoCinza
+        }
+    }
+
+    &__image-colum {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        &__image {
+            display: flex;
+            position: relative;
+
+            &__listcolum {
+                    width: 286px;
+                    top: 100px;
+                    font-size: 16px;
+                    left: 66px;
+                    position: absolute;
+            }
+
+            &--image-square {
+                width: 606px;
+                height: 544px;
+                border-radius: 16px;
+                background-color: #3498db;
+                margin-right: 16px;
+            }
+        }
+
+        &__image-right {
+            display: block;
+            position: relative;
+
+            &__list {
+
+                &__image-square {
+                    width: 400px;
+                    height: 264px;
+                    border-radius: 16px;
+                    background-color: #3498db;
+                    margin-bottom: 16px;
+                }
+
+                &__item {
+                    width: 286px;
+                    top: 60px;
+                    font-size: 16px;
+                    left: 36px;
+                    position: absolute;
+
+                    &__bottom {
+                        width: 286px;
+                        bottom: 120px;
+                        font-size: 16px;
+                        left: 36px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
 }

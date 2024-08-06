@@ -18,6 +18,7 @@ a{
     width: 100%;
     overflow: hidden;
     position: relative;
+    object-fit: cover;
 
     @media (max-width: 1024px) {
         width: 100%;
