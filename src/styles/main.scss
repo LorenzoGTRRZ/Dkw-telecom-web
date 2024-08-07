@@ -39,6 +39,35 @@
         animation-delay: 1.8s!important;
 }
 
+@mixin text($fontsize: 16px) {
+    font-size: $fontsize;
+    line-height: $fontsize + 10px;
+    color: variables.$corDoTexto;
+}
 
+.text--view {
+    @include text(14px);
+}
+
+.text--medium {
+    @include text(16px);
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variables.$corDoTexto
+}
+
+.title--view {
+    @include title(28px)
+}
+
+.title--small {
+    @include title(18px)
+}
+
+.title--footer {
+    @include title(23.4)
+}
 
 
