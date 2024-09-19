@@ -70,4 +70,8 @@
     @include title(23.4)
 }
 
+.title--verybig{
+    @include title(64px)
+}
+
 
