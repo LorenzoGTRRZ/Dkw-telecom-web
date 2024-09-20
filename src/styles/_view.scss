@@ -27,6 +27,11 @@
         justify-content: center;
         margin: 0 auto;
 
+        @media (max-width: 678px) {
+            display: block;
+            margin-left: 38px;
+        }
+
         &__image {
             display: flex;
             position: relative;
@@ -37,6 +42,21 @@
                     font-size: 16px;
                     left: 66px;
                     position: absolute;
+
+                    @media (max-width: 678px) {
+                        width: 170px;
+                        top: 20px;
+                        left: 37px;
+
+                        strong {
+                            font-size: 14px;
+                        }
+
+                        p {
+                            font-size: 10px;
+                            line-height: 1;
+                        }
+                    }
             }
 
             &--image-square {
@@ -45,12 +65,29 @@
                 border-radius: 16px;
                 background-color: #3498db;
                 margin-right: 16px;
+
+                @media (max-width: 678px) {
+                    width: 350px;
+                    height: 217px;
+                    margin-bottom: 16px;
+                }
             }
         }
 
         &__image-right {
             display: block;
             position: relative;
+
+            @media (max-width: 678px) {
+                strong {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 10px;
+                    line-height: 1;
+                }
+            }
 
             &__list {
 
@@ -60,6 +97,26 @@
                     border-radius: 16px;
                     background-color: #3498db;
                     margin-bottom: 16px;
+
+                    @media (min-width: 360px) and (max-width: 361px) {
+                        width: 305px;
+                        height: 200px;
+                    }
+
+                    @media (min-width: 361px) and (max-width: 389px) {
+                        width: 320px;
+                        height: 200px;
+                    }
+
+                    @media (min-width: 389px) and (max-width: 390px) {
+                        width: 335px;
+                        height: 200px;
+                    }
+
+                    @media (min-width: 391px) and (max-width: 678px) {
+                        width: 350px;
+                        height: 200px;
+                    }
                 }
 
                 &__item {
@@ -75,6 +132,11 @@
                         font-size: 16px;
                         left: 36px;
                         position: absolute;
+
+                        @media (max-width: 678px) {
+                            width: 170px;
+                            bottom: 90px;
+                        }
                     }
                 }
             }
